@@ -63,7 +63,7 @@ Each subscription then moves through its own **lifecycle state machine** (active
 
 ## 🎨 Design Philosophy
 
-Indian fintech has a look — and SubSense is deliberately trying not to have it. The goal is closer to what apps like **Jupiter** proved is possible: financial products can be expressive, warm, and modern without sacrificing trust or clarity.
+Indian fintech has a look — and Loop'in is deliberately trying not to have it. The goal is closer to what apps like **Jupiter** proved is possible: financial products can be expressive, warm, and modern without sacrificing trust or clarity.
 
 Every color, spacing value, and type style in this project comes from a proper design token system — not hardcoded hex codes sprinkled through the UI.
 
