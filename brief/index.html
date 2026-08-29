@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensures proper responsive rendering on all mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loop'in — Project Brief</title>
+  
+  <!-- Google Fonts Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Link to Extracted External CSS Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="ledger-bg">
+
+<!-- Masthead Section -->
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <div class="masthead-mark">
+      <span class="dot"></span> LOOP'IN — PROJECT BRIEF
+    </div>
+    <div class="masthead-meta">
+      <span>Vol. 01 · India Edition</span>
+      <span>Prepared 24 Aug 2026</span>
+      <span>Internal · Not for distribution</span>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">Strategy · Market Context · Product USP · Roadmap</div>
+    <h1>Every subscription,<br><span class="plain">found before it renews.</span></h1>
+    <div class="hero-grid">
+      <p class="hero-lede">
+        loop'in is a personal subscription-management product built on one promise: 
+        <strong>every recurring charge a user has, in one place — found for them, never taken from them.</strong> 
+        Not another budgeting dashboard, but the missing discovery layer between fragmented recurring-payment infrastructure and the question every consumer quietly asks: what am I actually paying for?
+      </p>
+      <div class="hero-side">
+        <div class="label">The strategic opportunity</div>
+        <p>India's recurring-payment rails — UPI AutoPay, Account Aggregator consent flows, RBI's pre-debit mandate — are maturing faster than any consumer-facing layer that reconciles them. That gap is the whitespace.</p>
+        <div class="label">The USP</div>
+        <p>A detection engine that combines consented signals — email, UPI/AutoPay, bank &amp; card via AA, manual entry — into one canonical, confidence-scored subscription record.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Infinite Ticker Banner -->
+<div class="ticker" id="tickerBanner">
+  <div class="ticker-track">
+    <span>UPI · MAY 2026 → <b>23.2B transactions</b> · ≈₹29.9T value [9]</span>
+    <span>ACCOUNT AGGREGATORS · JUN 2026 → <b>17 operational</b> · 295M monthly data shares [12]</span>
+    <span>DIGITAL SUBSCRIPTIONS · INDIA 2025 → <b>₹163B revenue</b> · up 60% YoY [5][6][22]</span>
+    <span>PAID VIDEO · <b>216M subscriptions</b> across 143M households [5]</span>
+    <span>NPCI · OCT 2025 → UPI AutoPay enhancement makes mandates <b>portable across apps</b> [10]</span>
+    <span>UPI · MAY 2026 → <b>23.2B transactions</b> · ≈₹29.9T value [9]</span>
+    <span>ACCOUNT AGGREGATORS · JUN 2026 → <b>17 operational</b> · 295M monthly data shares [12]</span>
+    <span>DIGITAL SUBSCRIPTIONS · INDIA 2025 → <b>₹163B revenue</b> · up 60% YoY [5][6][22]</span>
+    <span>PAID VIDEO · <b>216M subscriptions</b> across 143M households [5]</span>
+    <span>NPCI · OCT 2025 → UPI AutoPay enhancement makes mandates <b>portable across apps</b> [10]</span>
+  </div>
+</div>
+
+<!-- Foundation Section -->
+<section id="foundation">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Brand &amp; Product Foundation</div>
+        <h2 class="title">What loop'in is — and isn't</h2>
+      </div>
+      <div class="section-note">Four load-bearing decisions from the brand guide that shape every product surface.</div>
+    </div>
+    <div class="foundation-grid">
+      <div class="f-card pine-fill">
+        <div class="num">POSITIONING</div>
+        <h3>Personal subscription management</h3>
+        <p>Automatic detection with explicit consent, and reminders early enough to act on.</p>
+        <div class="cite">Brand Guide, p.4</div>
+      </div>
+      <div class="f-card">
+        <div class="num">AUDIENCE</div>
+        <h3>22–34, digitally fluent</h3>
+        <p>8–20 active subscriptions each. The condition being solved is administrative fog — not necessarily financial distress.</p>
+        <div class="cite">Brand Guide, p.6</div>
+      </div>
+      <div class="f-card">
+        <div class="num">BOUNDARIES</div>
+        <h3>Four things loop'in refuses to be</h3>
+        <p>Not a budgeting app. Not a financial advisor. Not a gamified tracker. Not a surveillance product.</p>
+        <div class="cite">Brand Guide, p.8</div>
+      </div>
+      <div class="f-card">
+        <div class="num">VOICE</div>
+        <h3>Direct, unhurried, exact</h3>
+        <p>And respectful — the tone that lets an app read financial signals without feeling like it's watching you.</p>
+        <div class="cite">Brand Guide, pp.33–35</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Market Analysis & Interactive Charts Section -->
+<section id="market">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Market Context</div>
+        <h2 class="title">A market expanding while it fragments</h2>
+      </div>
+      <div class="section-note">Estimates vary by publisher scope — figures below use each source's own definition and should not be combined arithmetically.</div>
+    </div>
+
+    <div class="market-cols">
+      <div>
+        <div class="stat-block">
+          <div class="figure">78<sup>%</sup></div>
+          <div class="desc">of international adults held at least one subscription in 2021, up from 71% in 2018 — the consumer-behaviour baseline the whole category rests on. <span class="src">[4]</span></div>
+        </div>
+
+        <div class="range-bar">
+          <div class="rlabel"><span>GLOBAL MARKET SIZE — 2025/26</span><span>Grand View · Juniper</span></div>
+          <div class="range-track" data-percentage="52">
+            <div class="range-fill" style="width:0%;"></div>
+            <div class="dot2" style="left:0%;"></div>
+          </div>
+          <div class="rlabel"><span class="mono">$628.2B (2026, Grand View) [1]</span><span class="mono">$722B (2025, Juniper) [2]</span></div>
+        </div>
+
+        <div class="range-bar">
+          <div class="rlabel"><span>PROJECTED BY 2030–33</span><span></span></div>
+          <div class="range-track" data-percentage="79">
+            <div class="range-fill alt" style="width:0%;"></div>
+            <div class="dot2 alt" style="left:0%;"></div>
+          </div>
+          <div class="rlabel"><span class="mono">$1.2T by 2030 (Juniper) [2]</span><span class="mono">$1.512T by 2033 (Grand View) [1]</span></div>
+        </div>
+
+        <p class="market-summary-text">The consistent signal across both models: recurring-revenue adoption is now mainstream across media, software, retail and services — with Asia Pacific among the fastest-growing regions. <span class="mono src">[1][2]</span></p>
+      </div>
+
+      <!-- Bar Chart Container -->
+      <div class="chart-card">
+        <div class="chart-title">India subscription ecosystem — selected 2025 indicators</div>
+        <div class="bars" id="barsChart">
+          <div class="bar-col">
+            <div class="val">₹163B</div>
+            <div class="bar" data-h="76"></div>
+            <div class="cap">Digital subscription<br>revenue, 2025</div>
+          </div>
+          <div class="bar-col">
+            <div class="val">216M</div>
+            <div class="bar" data-h="100"></div>
+            <div class="cap">Paid video<br>subscriptions, 2025</div>
+          </div>
+          <div class="bar-col">
+            <div class="val">14.4M</div>
+            <div class="bar alt" data-h="7"></div>
+            <div class="cap">Paid music<br>subscriptions, 2025</div>
+          </div>
+          <div class="bar-col">
+            <div class="val">~4M</div>
+            <div class="bar alt" data-h="2"></div>
+            <div class="cap">News<br>subscriptions, 2025</div>
+          </div>
+        </div>
+        <div class="chart-units">INR bn for revenue · million for subscriber counts &nbsp;·&nbsp; Source: EY / FICCI–EY [5][6][22]</div>
+      </div>
+    </div>
+
+    <div class="foundation-grid market-grid">
+      <div class="f-card">
+        <div class="num">RAILS · MAY 2026</div>
+        <h3>23.2B UPI transactions</h3>
+        <p>Worth approximately ₹29.9 trillion — the payment infrastructure loop'in's detection engine can observe consent signals across.</p>
+        <div class="cite">NPCI [9]</div>
+      </div>
+      <div class="f-card">
+        <div class="num">CONSENT · JUN 2026</div>
+        <h3>17 Account Aggregators live</h3>
+        <p>Moving 295 million monthly data shares — the regulated path for bank and card recurring-charge visibility.</p>
+        <div class="cite">Sahamati [12]</div>
+      </div>
+      <div class="f-card">
+        <div class="num">MANDATES · OCT 2025</div>
+        <h3>AutoPay goes portable</h3>
+        <p>NPCI's enhancement makes active UPI mandates viewable and portable across UPI apps — a structural tailwind for cross-rail identity resolution.</p>
+        <div class="cite">NPCI [10]</div>
+      </div>
+    </div>
+    <p class="mono scope-note">Adjacent for scope: IMARC estimates India's broader subscription-e-commerce market at $15B (2025) — wider than loop'in's digital recurring-charge focus. [8]</p>
+  </div>
+</section>
+
+<!-- Problem vs Solution Section -->
+<section id="problem">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Problem → Solution</div>
+        <h2 class="title">The gap between five signals and one answer</h2>
+      </div>
+    </div>
+    <div class="split">
+      <div class="problem">
+        <h3>What's broken</h3>
+        <div class="p-item"><h4>Subscription sprawl</h4><p>Recurring charges now span streaming, cloud, memberships, commerce, fitness, learning and financial products — experienced as unrelated merchants and dates.</p></div>
+        <div class="p-item"><h4>Fragmented visibility</h4><p>A single subscription may surface as an email receipt, a UPI mandate, a card debit, a bank transaction, or a platform-billed charge — with no layer reconciling all of them.</p></div>
+        <div class="p-item"><h4>Automation creates inertia</h4><p>Auto-renewal serves the merchant and once helped the user — now it quietly turns an intentional purchase into a persistent commitment.</p></div>
+        <div class="p-item"><h4>Discovery is manual or intrusive</h4><p>Trackers ask users to do the work; bank-linked apps automate it by demanding broad financial-account access. Nothing sits proportionate in between.</p></div>
+      </div>
+      <div class="solution">
+        <h3>What loop'in does instead</h3>
+        <div class="s-item"><h4>Effortless by default</h4><p>Detection first — manual entry is a fallback, never the onboarding burden.</p></div>
+        <div class="s-item"><h4>Consent before capability</h4><p>Every source is explicitly connected, explainable, and reversible.</p></div>
+        <div class="s-item"><h4>Calm with money</h4><p>Reports recurring charges without judging spend or pushing cancellation.</p></div>
+        <div class="s-item"><h4>Precise, not clinical</h4><p>Exact merchant, amount, frequency, renewal date — presented in a warm interface.</p></div>
+        <div class="s-item"><h4>One canonical record, confidence-aware</h4><p>Multiple raw signals collapse into one subscription; users always know if a detection is strong, uncertain, or needs confirmation.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Detection Engine Visual Pipeline -->
+<section id="engine" class="engine-section">
+  <div class="wrap">
+    <div class="engine-panel">
+      <div class="engine-inner">
+        <div class="engine-title">Detection Engine — the product USP</div>
+        <p class="engine-sub">Four evidence sources, five processing stages, one canonical subscription — with a human feedback loop back into matching.</p>
+
+        <div class="pipeline">
+          <div class="sources-col">
+            <div class="src-node"><span class="sq"></span>Email receipts</div>
+            <div class="src-node"><span class="sq"></span>UPI &amp; AutoPay mandates</div>
+            <div class="src-node"><span class="sq"></span>Card &amp; bank via AA</div>
+            <div class="src-node"><span class="sq"></span>Manual entry</div>
+          </div>
+          <div class="flow-line"></div>
+          <div class="stage"><span class="idx">01</span>Normalize / clean-up</div>
+          <div class="flow-line"></div>
+          <div class="stage"><span class="idx">02</span>Match &amp; merge</div>
+          <div class="flow-line"></div>
+          <div class="stage"><span class="idx">03</span>Identity resolution</div>
+          <div class="flow-line"></div>
+          <div class="stage"><span class="idx">04</span>Enrich</div>
+          <div class="flow-line"></div>
+          <div class="stage"><span class="idx">05</span>Confidence score</div>
+          <div class="flow-line"></div>
+          <div class="output-card">One clean<br>subscription<br>dashboard</div>
+        </div>
+
+        <div class="feedback-note">Human feedback loop routes corrections back into match &amp; merge — per the supplied detection-engine snapshot.</div>
+        <p class="engine-caption">Treat this as the current product-system framing rather than a validated production specification. Every detection surface must state what is read, why it's read, and how to turn it off — the brand guide names automatic detection as both the product's best feature and its biggest trust risk. <span class="mono">[Brand Guide, p.35]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Impact Metrics Grid -->
+<section id="metrics">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Measurable Product Impact</div>
+        <h2 class="title">Validation targets, not achieved results</h2>
+      </div>
+      <div class="section-note">Eight pilot metrics, each tied to a specific trust or performance claim in the brief.</div>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric"><div class="m-val">≥95%</div><div class="m-label">Detection precision</div><div class="m-desc">On confirmed subscriptions — false positives erode trust fastest.</div></div>
+      <div class="metric"><div class="m-val">≥90%</div><div class="m-label">Detection recall</div><div class="m-desc">Of eligible recurring subscriptions found in pilot accounts.</div></div>
+      <div class="metric"><div class="m-val">&lt;2%</div><div class="m-label">Duplicate rate</div><div class="m-desc">After match/merge — validates identity resolution across sources.</div></div>
+      <div class="metric"><div class="m-val">&lt;60s</div><div class="m-label">Time to first result</div><div class="m-desc">After sources are connected — proves "effortless by default."</div></div>
+      <div class="metric"><div class="m-val">≥80%</div><div class="m-label">Confirmation rate</div><div class="m-desc">Of high-confidence detections accepted by the user.</div></div>
+      <div class="metric"><div class="m-val">≥3 days</div><div class="m-label">Median reminder lead time</div><div class="m-desc">Before renewal — enough time to act on.</div></div>
+      <div class="metric"><div class="m-val">≥95%</div><div class="m-label">Revocation completion</div><div class="m-desc">One-screen permission revocation — consent that's genuinely reversible.</div></div>
+      <div class="metric"><div class="m-val">≥25%</div><div class="m-label">30-day retention</div><div class="m-desc">Pilot target — tests whether recurring visibility is ongoing utility.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Competitive Comparison Table -->
+<section id="competitive">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Competitive Positioning</div>
+        <h2 class="title">The whitespace is cross-rail identity resolution</h2>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="comp">
+        <thead>
+          <tr><th>Product</th><th>Demonstrates</th><th>Leaves open</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rocket&nbsp;Money</td>
+            <td>The power of automatic detection at scale. <span class="tag">[16][17]</span></td>
+            <td>Built around broad financial-account connectivity, not consent-scoped, per-source access.</td>
+          </tr>
+          <tr>
+            <td>Hiatus</td>
+            <td>Bank-linked subscription tracking as a category. <span class="tag">[17][18]</span></td>
+            <td>Same broad-connectivity trade-off as Rocket Money.</td>
+          </tr>
+          <tr>
+            <td>Bobby</td>
+            <td>The privacy and simplicity appeal of manual tracking. <span class="tag">[17]</span></td>
+            <td>Discovery work is pushed entirely onto the user.</td>
+          </tr>
+          <tr>
+            <td>PhonePe</td>
+            <td>UPI-native mandate management, portability and pre-debit reminders becoming standard infrastructure. <span class="tag">[10][19][20]</span></td>
+            <td>Rail-native, not a cross-rail canonical subscription record.</td>
+          </tr>
+          <tr class="highlight">
+            <td>loop'in</td>
+            <td>One real-world subscription, many evidence sources — resolved across rails, not within one.</td>
+            <td>The whitespace this brief is built to occupy.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Value Proposition Banner -->
+<div class="value-band">
+  <div class="wrap">
+    <p>loop'in finds recurring charges across the places they hide, turns them into one clean subscription list, and tells the user before renewal — with consent at every step.</p>
+    <div class="not-list">Competing on <b>discovery</b> · <b>reconciliation</b> · <b>trust</b> · <b>renewal awareness</b> — not on budgets, credit scores, or cancellation services.</div>
+  </div>
+</div>
+
+<!-- Product Roadmap -->
+<section id="roadmap">
+  <div class="wrap roadmap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Roadmap</div>
+        <h2 class="title">Four phases, twenty-four months</h2>
+      </div>
+    </div>
+    <div class="rm-line"></div>
+    <div class="rm-grid">
+      <div class="rm-item">
+        <div class="rm-dot"></div>
+        <div class="rm-phase">0–3 months</div>
+        <h4>Foundation</h4>
+        <ul>
+          <li>Instrumented detection-engine prototype with labelled evaluation dataset</li>
+          <li>Consent and source-connection journeys; privacy/data-retention model</li>
+          <li>Merchant canonicalization, recurrence rules, initial match/merge logic</li>
+          <li>Manual-review console for false positives/negatives and identity-resolution edge cases</li>
+        </ul>
+      </div>
+      <div class="rm-item">
+        <div class="rm-dot"></div>
+        <div class="rm-phase">3–6 months</div>
+        <h4>Pilot</h4>
+        <ul>
+          <li>Email + UPI/AutoPay + AA transaction ingestion in controlled beta</li>
+          <li>Confidence scoring and user confirmation loop</li>
+          <li>Subscription dashboard, renewal reminders, source provenance</li>
+          <li>Measure precision/recall, time-to-value, trust, retention</li>
+        </ul>
+      </div>
+      <div class="rm-item">
+        <div class="rm-dot"></div>
+        <div class="rm-phase">6–12 months</div>
+        <h4>Product-market fit</h4>
+        <ul>
+          <li>Expand merchant coverage and recurring-pattern library</li>
+          <li>Improve cross-source identity resolution and annual/irregular billing detection</li>
+          <li>Launch referral / household visibility only once core detection is reliable</li>
+          <li>Test monetization without compromising the trust proposition</li>
+        </ul>
+      </div>
+      <div class="rm-item">
+        <div class="rm-dot"></div>
+        <div class="rm-phase">12–24 months</div>
+        <h4>Scale</h4>
+        <ul>
+          <li>Broaden India bank/payment coverage; deepen AA integrations</li>
+          <li>Regional expansion using the same detection architecture</li>
+          <li>Partnerships with fintechs, banks, subscription ecosystems with clear user benefit</li>
+          <li>Detection engine as a reusable intelligence layer for future surfaces</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Appendix Section -->
+<section id="appendix">
+  <div class="wrap appendix-grid">
+    <div>
+      <div class="eyebrow app-eyebrow">Appendix A</div>
+      <h2 class="title app-title">Supplied detection-engine flow</h2>
+      <p class="app-desc">The supplied snapshot depicts the intended architecture and should be read as current product-system framing — not a validated production specification.</p>
+      <div class="flow-appendix">
+        <div class="flow-title">Components visible in the snapshot</div>
+        <div class="chips">
+          <span class="chip">Email recipients</span>
+          <span class="chip">UPI &amp; AutoPay mandates</span>
+          <span class="chip">Card &amp; bank via AA</span>
+          <span class="chip">Manual entry</span>
+          <span class="chip">Normalize / clean-up</span>
+          <span class="chip">Match &amp; merge</span>
+          <span class="chip">Identity resolution / matching</span>
+          <span class="chip">Enrich</span>
+          <span class="chip">Confidence score</span>
+          <span class="chip">Clean subscription dashboard</span>
+          <span class="chip">Manual feedback loop</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow app-eyebrow">Appendix B</div>
+      <h2 class="title app-title">Brand rules that shape strategy</h2>
+      <div class="rule-list">
+        <div class="rule">
+          <span class="swatch bg-pine"></span><h4>Pine means the next renewal</h4>
+          <p>Reserved for upcoming renewal dates, the primary action, the logo point, and active navigation.</p>
+          <p class="cite">Brand Guide, pp.19–22</p>
+        </div>
+        <div class="rule">
+          <span class="swatch bg-ochre"></span><h4>Ochre means act now</h4>
+          <p>Reserved for a charge inside 48 hours, or a failed connection — never used decoratively.</p>
+          <p class="cite">Brand Guide, pp.19–22</p>
+        </div>
+        <div class="rule">
+          <span class="swatch bg-mint"></span><h4>Detection is the exception in motion</h4>
+          <p>The scanning loop is the one continuous animation in the product.</p>
+          <p class="cite">Brand Guide, p.30</p>
+        </div>
+        <div class="rule">
+          <span class="swatch bg-ink"></span><h4>Consent is narrated, every time</h4>
+          <p>Automatic detection is always introduced with what is read, why it's read, and how to turn it off.</p>
+          <p class="cite">Brand Guide, p.35</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footnote / Sources Section -->
+<footer>
+  <div class="wrap">
+    <div class="eyebrow app-eyebrow">Sources &amp; Research Notes</div>
+    <p class="sources-note">Source hierarchy: primary regulatory / ecosystem sources first, industry research second, company product documentation for competitor feature claims. Market estimates use each publisher's own definitions and should not be combined arithmetically unless scopes match.</p>
+    <div class="src-cols">
+      <div><span class="sid">[1]</span> Grand View Research — Global Subscription Economy Market (Jul 2026) — <a href="https://www.grandviewresearch.com/industry-analysis/subscription-economy-market-report" target="_blank" rel="noopener">grandviewresearch.com</a></div>
+      <div><span class="sid">[2]</span> Juniper Research — Subscription Economy Market Report 2025–2030 — <a href="https://www.juniperresearch.com/research/fintech-payments/ecommerce/subscription-economy-market-report/" target="_blank" rel="noopener">juniperresearch.com</a></div>
+      <div><span class="sid">[3]</span> Zuora — 2025 Subscription Economy Index — <a href="https://www.zuora.com/resource/the-2025-subscription-economy-index/" target="_blank" rel="noopener">zuora.com</a></div>
+      <div><span class="sid">[4]</span> Zuora — End of Ownership / consumer benchmark — <a href="https://www.zuora.com/press-release/subscription-economy-index-level-reaches-437-over-nearly-a-decade-as-consumer-buying-preferences-shift-from-ownership-to-usership/" target="_blank" rel="noopener">zuora.com</a></div>
+      <div><span class="sid">[5]</span> EY — Indian Media &amp; Entertainment 2025 report — <a href="https://www.ey.com/en_in/newsroom/2026/03/india-s-media-and-entertainment-sector-grew-9-percent-to-inr-2-point-78-trillion-in-2025-driven-by-digital-and-live-experiences-ficci-ey-report" target="_blank" rel="noopener">ey.com</a></div>
+      <div><span class="sid">[6]</span> EY–IMI — How India listens, streams and pays for music — <a href="https://www.ey.com/en_in/newsroom/2026/07/india-s-paid-music-subscriptions-could-reach-28-30-million-by-2028-as-industry-focuses-on-monetization-and-premium-experiences" target="_blank" rel="noopener">ey.com</a></div>
+      <div><span class="sid">[7]</span> EY — Indian M&amp;E 2024/25 digital subscription detail — <a href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/newsroom/2025/ey-shape-the-future-indian-media-and-entertainment-is-scripting-a-new-story.pdf" target="_blank" rel="noopener">ey.com</a></div>
+      <div><span class="sid">[8]</span> IMARC — India Subscription E-commerce Market (2025) — <a href="https://www.imarcgroup.com/india-subscription-e-commerce-market" target="_blank" rel="noopener">imarcgroup.com</a></div>
+      <div><span class="sid">[9]</span> NPCI — UPI Product Statistics — <a href="https://www.npci.org.in/product/upi/product-statistics" target="_blank" rel="noopener">npci.org.in</a></div>
+      <div><span class="sid">[10]</span> NPCI — Enhancement of UPI AutoPay (7 Oct 2025) — <a href="https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf" target="_blank" rel="noopener">npci.org.in</a></div>
+      <div><span class="sid">[11]</span> RBI — e-Mandate / recurring transaction framework — <a href="https://www.rbi.org.in/Scripts/RTGS_Notification.aspx" target="_blank" rel="noopener">rbi.org.in</a></div>
+      <div><span class="sid">[12]</span> Sahamati — Account Aggregator ecosystem (Jun 2026) — <a href="https://sahamati.org.in/" target="_blank" rel="noopener">sahamati.org.in</a></div>
+      <div><span class="sid">[13]</span> RBI — Master Directions for Account Aggregators — <a href="https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D10598%281%29.html" target="_blank" rel="noopener">rbi.org.in</a></div>
+      <div><span class="sid">[14]</span> MeitY — Digital Personal Data Protection Rules, 2025 — <a href="https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa" target="_blank" rel="noopener">meity.gov.in</a></div>
+      <div><span class="sid">[15]</span> MeitY — DPDP Act 2023 — <a href="https://www.meity.gov.in/static/uploads/2024/02/Digital-Personal-Data-Protection-Act-2023.pdf" target="_blank" rel="noopener">meity.gov.in</a></div>
+      <div><span class="sid">[16]</span> Rocket Money — product / FAQ — <a href="https://www.rocketmoney.com/faq" target="_blank" rel="noopener">rocketmoney.com</a></div>
+      <div><span class="sid">[17]</span> Rocket Money — 2026 subscription app comparison — <a href="https://www.rocketmoney.com/learn/personal-finance/best-subscription-management-apps" target="_blank" rel="noopener">rocketmoney.com</a></div>
+      <div><span class="sid">[18]</span> Hiatus — banking connection &amp; tracking — <a href="https://help.hiatusapp.com/en_us/link-your-banking-institution-HkB4MReWP" target="_blank" rel="noopener">help.hiatusapp.com</a></div>
+      <div><span class="sid">[19]</span> PhonePe — AutoPay terms — <a href="https://www.phonepe.com/terms-conditions/autopay/" target="_blank" rel="noopener">phonepe.com</a></div>
+      <div><span class="sid">[20]</span> PhonePe — fraudulent subscription mandates — <a href="https://www.phonepe.com/blog/trust-and-safety/how-to-identify-fraudulent-subscription-mandates/" target="_blank" rel="noopener">phonepe.com</a></div>
+      <div><span class="sid">[21]</span> CRED — multibill payment &amp; autopay (Jun 2026) — <a href="https://newsroom.cred.club/cred-adds-multibill-payment-and-autopay-to-simplify-credit-card-bill-payments/" target="_blank" rel="noopener">newsroom.cred.club</a></div>
+      <div><span class="sid">[22]</span> FICCI–EY — 2025 India M&amp;E, digital subscription revenue — <a href="https://www.ey.com/en_in/insights/media-entertainment/stories-scale-and-impact-unlocking-india-s-m-e-economy" target="_blank" rel="noopener">ey.com</a></div>
+    </div>
+    <div class="footer-note">
+      <span>This document is strategic research, not legal, financial or regulatory advice. Product targets are proposed validation metrics, not achieved results.</span>
+      <span>loop'in · internal · prepared 24 Aug 2026</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Link to Extracted External JavaScript File -->
+<script src="./main.js"></script>
+</body>
+</html>
