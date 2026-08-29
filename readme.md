@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📱 SubSense
+# 📱 Loop'in
 ### Know what you're paying for — before it hits your account.
 
 *An on-device subscription tracker built for India, designed to feel nothing like a banking app.*
@@ -13,7 +13,7 @@
 
 Most of us are bleeding money to subscriptions we forgot we signed up for. Existing trackers either want your SMS, your inbox, or a bank-linked aggregator — handing over more access than the problem deserves.
 
-**SubSense takes a different route.** It reads the payment notifications already arriving on your phone, figures out which ones are recurring, and quietly builds a picture of your subscriptions — entirely on your device. No servers. No bank access. No inbox scraping.
+**Loop'in takes a different route.** It reads the payment notifications already arriving on your phone, figures out which ones are recurring, and quietly builds a picture of your subscriptions — entirely on your device. No servers. No bank access. No inbox scraping.
 
 > Think of it as: *"I already get the notification. I just want someone to actually pay attention to it."*
 
@@ -24,7 +24,7 @@ Most of us are bleeding money to subscriptions we forgot we signed up for. Exist
 The RBI mandates a **24-hour pre-debit notification** for every recurring charge. That's not just a compliance rule — it's a gift for detection:
 
 - 📲 Every recurring charge announces itself *before* it happens
-- 🔍 SubSense listens for that signal via Android's `NotificationListenerService`
+- 🔍 Loop'in listens for that signal via Android's `NotificationListenerService`
 - ⏱️ You find out about a renewal with a full day to cancel — not after your money's gone
 
 No SMS permission headaches. No annual security audits for reading emails. No FIU partnership required. Just a signal that's already sitting on your lock screen, finally being put to work.
