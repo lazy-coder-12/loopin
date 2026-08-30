@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Loopin — Iconography</title>
+<link rel="stylesheet" href="./icon-style.css" />
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <h1 class="page-title">Iconography</h1>
+      <p class="page-subtitle">
+        The icon set used across Loopin's interface. Every glyph sits on a 24×24 grid
+        with a 1.5px stroke, so it stays crisp at the small sizes a subscription list
+        actually gets read at. Tap any card to copy its SVG.
+      </p>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="toolbar__inner">
+      <div class="search-field">
+        <svg class="search-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M21 21l-4.35-4.35"></path>
+        </svg>
+        <input type="text" id="icon-search" placeholder="Search icons by name…" autocomplete="off" />
+      </div>
+      <span class="toolbar__count" id="icon-count"></span>
+    </div>
+  </div>
+
+  <main class="page-main" id="icon-sections">
+    <!-- Sections are rendered here by script.js -->
+  </main>
+
+  <footer class="page-footer">
+    <p>Loopin Design System &mdash; Iconography v1 &mdash; built for on-device, local-first UI</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"></circle>
+      <path d="M8.5 12.5l2.5 2.5 5-5"></path>
+    </svg>
+    <span id="toast-message">Copied SVG to clipboard</span>
+  </div>
+
+  <script src="./icon-script.js"></script>
+</body>
+</html>
